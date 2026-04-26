@@ -1,0 +1,99 @@
+#heading {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    margin: 1em 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statlist {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: .5em;
+}
+
+.stathead {
+    display: flex;
+    color: white;
+    margin-bottom: .5em;
+}
+
+#teamhead {
+    margin-left: 1em;
+}
+
+#reghead {
+    margin-left: 22.5em;
+}
+
+#playoffhead {
+    margin-left: 7em;
+}
+
+.statrow {
+    font-size: 200%;
+    display: grid;
+    grid-template-columns: 5% 45% 25% 25%;
+    grid-template-areas: "rank team regular playoff"
+        "rank team regular playoff"
+        "rank team regular playoff"
+        "rank team regular playoff"
+        "rank team regular playoff"
+        "rank team regular playoff"
+        "rank team regular playoff"
+        "rank team regular playoff"
+        "rank team regular playoff"
+        "rank team regular playoff"
+        "rank team regular playoff"
+        "rank team regular playoff"
+        "rank team regular playoff"
+        "rank team regular playoff"
+        "rank team regular playoff"
+        "rank team regular playoff";
+
+    background-color: white;
+    border-radius: 25px;
+    align-items: center;
+}
+
+.rank {
+    grid-area: rank;
+    text-align: center;
+}
+
+.team {
+    grid-area: team;
+    display: flex;
+    gap: .5em;
+}
+
+.team a {
+    text-decoration: none;
+    color: black;
+}
+
+.team a:hover {
+    text-decoration: underline;
+}
+
+.teamlogo {
+    max-width: 30px;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.reg {
+    grid-area: regular;
+    text-align: center;
+}
+
+.playoffs {
+    grid-area: playoff;
+    text-align: center;
+}

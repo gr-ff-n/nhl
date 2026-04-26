@@ -6,31 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="shortcut icon" href="images/cup logo.png" type="image/x-icon">
 
-    <title>Welburn Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geom&display=swap" rel="stylesheet">
+
+    <title>2026 Stanley Cup Hub</title>
 </head>
 
 <body>
     <header>
-        <h2>Welburn Studio Portfolio</h2>
-        <h3>UNDER CONSTRUCTION</h3>
+        <a href="index.html"><img src="images/header image.png" alt=""></a>
     </header>
-    <main>
-        <p>I am a graphic design major with a computer science minor. For my portfolio class, we are collecting our work
-            and creating it into a portfolio book, website, resume, and business cards, as well as translating our brand
-            to Linkedin and other socials. Currently, we are using Adobe Portfolio to make the website since it has
-            intuitive and responsive design. I would love to make my own portfolio site, or at least have a version of
-            it that I created using the skills I have been learning in this class.</p>
-        <p>Potential Pages:</p>
+    <nav id="nav_bar">
         <ul>
-            <li>Home page with some projects</li>
-            <li>About, probably with some parts of my resume and other personal things about me</li>
-            <li>Gallery of work with subsections of types of projects</li>
-            <li>Contact info with links to my other stuff (instagram, linkedin, email, etc)</li>
-            <li>Likely some more sub pages here and there but that is TBD</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bracket.html">Bracket</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="teams.html">Teams</a></li>
         </ul>
+    </nav>
+    <!-- countdown source: https://codepen.io/AllThingsSmitty/pen/JJavZN -->
+    <div class="container">
+        <h1 id="headline">COUNTDOWN TO END OF CUP</h1>
+        <div id="countdown">
+            <ul>
+                <li><span id="days"></span>days</li>
+                <li><span id="hours"></span>Hours</li>
+                <li><span id="minutes"></span>Minutes</li>
+                <li><span id="seconds"></span>Seconds</li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <section id="todaysgames">
+            <h2>Today's Games &mdash; Sunday 4/26</h2>
+            <!-- <article id="today1">
+                <div class="gameheading">
+                    <img src="images/sabres logo.png" alt="">
+                    <h3>Sabres @ Bruins</h3>
+                    <img src="images/bruins logo.avif" alt="">
+                </div>
+                <p>Round 1, Game 4 &mdash; BUF leads 2&dash;1</p>
+                <p>2:00PM EDT</p>
+            </article> -->
+            <article id="today2">
+                <div class="gameheading">
+                    <img src="images/avalanche logo.png" alt="">
+                    <h3>Avalanche @ Kings</h3>
+                    <img src="images/kings logo.png" alt="">
+                </div>
+                <p>Round 1, Game 4 &mdash; COL leads 3&dash;0</p>
+                <p>4:30PM EDT</p>
+            </article>
+            <article id="today3">
+                <div class="gameheading">
+                    <img src="images/lightning logo.svg" alt="">
+                    <h3>Lightning @ Canadiens</h3>
+                    <img src="images/canadiens logo.png" alt="">
+                </div>
+                <p>Round 1, Game 4 &mdash; MTL leads 2&dash;1</p>
+                <p>7:00PM EDT</p>
+            </article>
+            <article id="today4">
+                <div class="gameheading">
+                    <img src="images/oilers logo.png" alt="">
+                    <h3>Oilers @ Ducks</h3>
+                    <img src="images/ducks logo.png" alt="">
+                </div>
+                <p>Round 1, Game 4 &mdash; ANA leads 2&dash;1</p>
+                <p>9:30PM EDT</p>
+            </article>
+        </section>
+        <section id="tomorrowsgames">
+            <h2>Tomorrow's Games &mdash; Monday 4/27</h2>
+            <article id="tomorrow1">
+                <div class="gameheading">
+                    <img src="images/flyers logo.svg" alt="">
+                    <h3>Flyers @ Penguins</h3>
+                    <img src="images/penguins logo.png" alt="">
+                </div>
+                <p>Round 1, Game 5 &mdash; PHI leads 3&dash;1</p>
+                <p>7:00PM EDT</p>
+            </article>
+            <article id="tomorrow2">
+                <div class="gameheading">
+                    <img src="images/golden knights logo.png" alt="">
+                    <h3>Golden Knights @ Mammoth</h3>
+                    <img src="images/ mammoth logo.png" alt="">
+                </div>
+                <p>Round 1, Game 4 &mdash; UTA leads 2&dash;1</p>
+                <p>9:30PM EDT</p>
+            </article>
+            <!-- <article id="tomorrow3">
+                <div class="gameheading">
+                    <img src="images/penguins logo.png" alt="">
+                    <h3>Penguins @ Flyers</h3>
+                    <img src="images/flyers logo.svg" alt="">
+                </div>
+                <p>Round 1, Game 4 &mdash; PHI leads 3&dash;0</p>
+                <p>8:00PM EDT</p>
+            </article> -->
+        </section>
     </main>
-    <footer></footer>
+
+    <div><button onclick="topFunction()" id="cornerBtn" title="Go to top">Return To Top</button></div>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> Griffin Welburn</p>
+    </footer>
 </body>
 
 </html>
+
+<script src="js/scripts.js"></script>

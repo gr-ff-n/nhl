@@ -1,0 +1,124 @@
+main {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-areas: 'western final eastern';
+    margin-bottom: 2em;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: .5em;
+}
+
+#eastern,
+#western,
+#final {
+    display: flex;
+    text-align: center;
+    margin: 1em auto 0;
+    gap: 3em;
+}
+
+#eastern {
+    grid-area: eastern;
+}
+
+#western {
+    grid-area: western;
+}
+
+#final {
+    grid-area: final;
+    flex-direction: column;
+    align-items: center;
+}
+
+#finalbox {
+    background-color: white;
+    width: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding: .75em 0;
+}
+
+#finalbox img {
+    width: 70%;
+}
+
+.round1,
+.round2,
+.conffinal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.round1 .roundbox {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.round2 .roundbox {
+    display: flex;
+    flex-direction: column;
+    gap: 12em;
+    height: 100%;
+    justify-content: center;
+}
+
+.conffinal .roundbox,
+#final .roundbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.gamebox {
+    background-color: white;
+    width: 10em;
+    height: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .25em;
+    border-radius: 25px;
+}
+
+hr {
+    border: 1px solid gray;
+    width: 85%;
+}
+
+.teamheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+
+.teamheading h3 {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.teamheading h2 {
+    font-size: 175%;
+    margin-left: .5em;
+    display: flex;
+    justify-content: center;
+    width: 18px;
+}
+
+.teamheading img {
+    max-width: 30px;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
