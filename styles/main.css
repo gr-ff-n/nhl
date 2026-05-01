@@ -28,19 +28,19 @@ header img {
     max-width: 100%;
 }
 
-#nav_bar {
+#nav_menu {
     width: 100%;
     background-color: black;
 }
 
-#nav_bar ul {
+#nav_menu ul {
     display: flex;
     list-style-type: none;
     gap: 10em;
     justify-content: center;
 }
 
-#nav_bar li a {
+#nav_menu li a {
     display: block;
     padding: 1em 2em;
     text-decoration: none;
@@ -48,7 +48,7 @@ header img {
     transition: all ease-in-out 200ms;
 }
 
-#nav_bar li a:hover {
+#nav_menu li a:hover {
     background-color: white;
     color: black;
     text-decoration: underline;
@@ -86,4 +86,22 @@ footer {
     margin-top: 1em;
     font-variant: small-caps;
     font-size: 90%;
+}
+
+#mobilemenu {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    #mobilemenu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        background-color: black;
+    }
+
+    #nav_menu {
+        display: none;
+    }
 }

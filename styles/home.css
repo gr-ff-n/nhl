@@ -83,3 +83,46 @@ main {
     display: block;
     font-size: 4.5rem;
 }
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 90%;
+        border: 5px ridge gray;
+    }
+
+    #headline {
+        font-size: 130%;
+        padding: 15px 5px 0;
+    }
+
+    #countdown li {
+        font-size: .75em;
+    }
+
+    #countdown li span {
+        font-size: 3rem;
+    }
+
+    main {
+        display: block;
+    }
+
+    #todaysgames article,
+    #tomorrowsgames article {
+        width: 95%;
+    }
+
+    .gameheading img {
+        max-width: 30px;
+    }
+
+    .gameheading h3 {
+        font-size: 125%;
+    }
+
+    #todaysgames h2,
+    #tomorrowsgames h2 {
+        font-size: 140%;
+    }
+
+}

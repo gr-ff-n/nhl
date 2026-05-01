@@ -5,6 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- JQUERY CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<!-- SLICKNAV JS FILE -->
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobilemenu" });
+		});
+	</script>
+
+	<link rel="stylesheet" href="styles/slicknav.css">
+
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="shortcut icon" href="images/cup logo.png" type="image/x-icon">
@@ -20,7 +34,8 @@
     <header>
         <a href="index.html"><img src="images/header image.png" alt=""></a>
     </header>
-    <nav id="nav_bar">
+    <nav id="mobilemenu"></nav>
+    <nav id="nav_menu">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="bracket.html">Bracket</a></li>
@@ -42,35 +57,35 @@
     </div>
     <main>
         <section id="todaysgames">
-            <h2>Today's Games &mdash; Sunday 4/26</h2>
-            <!-- <article id="today1">
-                <div class="gameheading">
-                    <img src="images/sabres logo.png" alt="">
-                    <h3>Sabres @ Bruins</h3>
-                    <img src="images/bruins logo.avif" alt="">
-                </div>
-                <p>Round 1, Game 4 &mdash; BUF leads 2&dash;1</p>
-                <p>2:00PM EDT</p>
-            </article> -->
-            <article id="today2">
-                <div class="gameheading">
-                    <img src="images/avalanche logo.png" alt="">
-                    <h3>Avalanche @ Kings</h3>
-                    <img src="images/kings logo.png" alt="">
-                </div>
-                <p>Round 1, Game 4 &mdash; COL leads 3&dash;0</p>
-                <p>4:30PM EDT</p>
-            </article>
-            <article id="today3">
+            <h2>Today's Games &mdash; Friday 5/1</h2>
+            <article id="today1">
                 <div class="gameheading">
                     <img src="images/lightning logo.svg" alt="">
                     <h3>Lightning @ Canadiens</h3>
                     <img src="images/canadiens logo.png" alt="">
                 </div>
-                <p>Round 1, Game 4 &mdash; MTL leads 2&dash;1</p>
+                <p>Round 1, Game 6 &mdash; MTL leads 3&dash;2</p>
                 <p>7:00PM EDT</p>
             </article>
-            <article id="today4">
+            <article id="today2">
+                <div class="gameheading">
+                    <img src="images/sabres logo.png" alt="">
+                    <h3>Sabres @ Bruins</h3>
+                    <img src="images/bruins logo.avif" alt="">
+                </div>
+                <p>Round 1, Game 6 &mdash; BUF leads 3&dash;2</p>
+                <p>7:30PM EDT</p>
+            </article>
+            <article id="today3">
+                <div class="gameheading">
+                    <img src="images/golden knights logo.png" alt="">
+                    <h3>Golden Knights @ Mammoth</h3>
+                    <img src="images/ mammoth logo.png" alt="">
+                </div>
+                <p>Round 1, Game 6 &mdash; VGK leads 3&dash;2</p>
+                <p>10:00PM EDT</p>
+            </article>
+            <!-- <article id="today4">
                 <div class="gameheading">
                     <img src="images/oilers logo.png" alt="">
                     <h3>Oilers @ Ducks</h3>
@@ -78,20 +93,20 @@
                 </div>
                 <p>Round 1, Game 4 &mdash; ANA leads 2&dash;1</p>
                 <p>9:30PM EDT</p>
-            </article>
+            </article> -->
         </section>
         <section id="tomorrowsgames">
-            <h2>Tomorrow's Games &mdash; Monday 4/27</h2>
+            <h2>Tomorrow's Games &mdash; Saturday 5/2</h2>
             <article id="tomorrow1">
                 <div class="gameheading">
                     <img src="images/flyers logo.svg" alt="">
-                    <h3>Flyers @ Penguins</h3>
-                    <img src="images/penguins logo.png" alt="">
+                    <h3>Flyers @ Hurricanes</h3>
+                    <img src="images/hurricanes logo.png" alt="">
                 </div>
-                <p>Round 1, Game 5 &mdash; PHI leads 3&dash;1</p>
-                <p>7:00PM EDT</p>
+                <p>Round 2, Game 1</p>
+                <p>8:00PM EDT</p>
             </article>
-            <article id="tomorrow2">
+            <!-- <article id="tomorrow2">
                 <div class="gameheading">
                     <img src="images/golden knights logo.png" alt="">
                     <h3>Golden Knights @ Mammoth</h3>
@@ -99,7 +114,7 @@
                 </div>
                 <p>Round 1, Game 4 &mdash; UTA leads 2&dash;1</p>
                 <p>9:30PM EDT</p>
-            </article>
+            </article> -->
             <!-- <article id="tomorrow3">
                 <div class="gameheading">
                     <img src="images/penguins logo.png" alt="">

@@ -5,6 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- SLICKNAV JS FILE -->
+    <script src="js/jquery.slicknav.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobilemenu" });
+        });
+    </script>
+
+    <link rel="stylesheet" href="styles/slicknav.css">
+
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/bracket.css">
     <link rel="shortcut icon" href="images/cup logo.png" type="image/x-icon">
@@ -20,7 +34,8 @@
     <header>
         <a href="index.html"><img src="images/header image.png" alt=""></a>
     </header>
-    <nav id="nav_bar">
+    <nav id="mobilemenu"></nav>
+    <nav id="nav_menu">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="bracket.html">Bracket</a></li>
@@ -33,11 +48,11 @@
         <section id="western">
             <article class="round1">
                 <div class="roundbox">
-                    <div class="gamebox">
+                    <div class="gamebox box1">
                         <div class="teamheading">
                             <img src="images/avalanche logo.png" alt="">
                             <h3>COL</h3>
-                            <h2>3</h2>
+                            <h2>4</h2>
                         </div>
                         <hr>
                         <div class="teamheading">
@@ -46,7 +61,7 @@
                             <h2>0</h2>
                         </div>
                     </div>
-                    <div class="gamebox">
+                    <div class="gamebox box2">
                         <div class="teamheading">
                             <img src="images/stars logo.png" alt="">
                             <h3>DAL</h3>
@@ -56,14 +71,14 @@
                         <div class="teamheading">
                             <img src="images/wild logo.svg" alt="">
                             <h3>MIN</h3>
-                            <h2>2</h2>
+                            <h2>4</h2>
                         </div>
                     </div>
-                    <div class="gamebox">
+                    <div class="gamebox box3">
                         <div class="teamheading">
                             <img src="images/golden knights logo.png" alt="">
                             <h3>VGK</h3>
-                            <h2>1</h2>
+                            <h2>3</h2>
                         </div>
                         <hr>
                         <div class="teamheading">
@@ -72,17 +87,17 @@
                             <h2>2</h2>
                         </div>
                     </div>
-                    <div class="gamebox">
+                    <div class="gamebox box4">
                         <div class="teamheading">
                             <img src="images/oilers logo.png" alt="">
                             <h3>EDM</h3>
-                            <h2>1</h2>
+                            <h2>2</h2>
                         </div>
                         <hr>
                         <div class="teamheading">
                             <img src="images/ducks logo.png" alt="">
                             <h3>ANA</h3>
-                            <h2>2</h2>
+                            <h2>4</h2>
                         </div>
                     </div>
                 </div>
@@ -90,10 +105,30 @@
             <article class="round2">
                 <div class="roundbox">
                     <div class="gamebox">
-                        <h2>TBD</h2>
+                        <div class="teamheading">
+                            <img src="images/avalanche logo.png" alt="">
+                            <h3>COL</h3>
+                            <h2>0</h2>
+                        </div>
+                        <hr>
+                        <div class="teamheading">
+                            <img src="images/wild logo.svg" alt="">
+                            <h3>MIN</h3>
+                            <h2>0</h2>
+                        </div>
                     </div>
                     <div class="gamebox">
-                        <h2>TBD</h2>
+                        <div class="teamheading">
+                            <img src="images/nhl logo.png" alt="">
+                            <h3>TBD</h3>
+                            <h2></h2>
+                        </div>
+                        <hr>
+                        <div class="teamheading">
+                            <img src="images/ducks logo.png" alt="">
+                            <h3>ANA</h3>
+                            <h2></h2>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -129,20 +164,20 @@
                         <div class="teamheading">
                             <img src="images/hurricanes logo.png" alt="">
                             <h3>CAR</h3>
-                            <h2></h2>
+                            <h2>0</h2>
                         </div>
                         <hr>
                         <div class="teamheading">
-                            <img src="images/nhl logo.png" alt="">
-                            <h3>TBD</h3>
-                            <h2></h2>
+                            <img src="images/flyers logo.svg" alt="">
+                            <h3>PHI</h3>
+                            <h2>0</h2>
                         </div>
                     </div>
                 </div>
             </article>
             <article class="round1">
                 <div class="roundbox">
-                    <div class="gamebox">
+                    <div class="gamebox box1">
                         <div class="teamheading">
                             <img src="images/sabres logo.png" alt="">
                             <h3>BUF</h3>
@@ -152,23 +187,23 @@
                         <div class="teamheading">
                             <img src="images/bruins logo.avif" alt="">
                             <h3>BOS</h3>
-                            <h2>1</h2>
+                            <h2>2</h2>
                         </div>
                     </div>
-                    <div class="gamebox">
+                    <div class="gamebox box2">
                         <div class="teamheading">
                             <img src="images/lightning logo.svg" alt="">
                             <h3>TBL</h3>
-                            <h2>1</h2>
+                            <h2>2</h2>
                         </div>
                         <hr>
                         <div class="teamheading">
                             <img src="images/canadiens logo.png" alt="">
                             <h3>MTL</h3>
-                            <h2>2</h2>
+                            <h2>3</h2>
                         </div>
                     </div>
-                    <div class="gamebox">
+                    <div class="gamebox box3">
                         <div class="teamheading">
                             <img src="images/hurricanes logo.png" alt="">
                             <h3>CAR</h3>
@@ -181,17 +216,17 @@
                             <h2>0</h2>
                         </div>
                     </div>
-                    <div class="gamebox">
+                    <div class="gamebox box4">
                         <div class="teamheading">
                             <img src="images/penguins logo.png" alt="">
                             <h3>PIT</h3>
-                            <h2>1</h2>
+                            <h2>2</h2>
                         </div>
                         <hr>
                         <div class="teamheading">
                             <img src="images/flyers logo.svg" alt="">
                             <h3>PHI</h3>
-                            <h2>3</h2>
+                            <h2>4</h2>
                         </div>
                     </div>
                 </div>

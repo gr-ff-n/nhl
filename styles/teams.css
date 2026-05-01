@@ -16,6 +16,7 @@ main {
     flex-direction: column;
     width: 60%;
     gap: .5em;
+    margin-bottom: 1em;
 }
 
 .stathead {
@@ -71,6 +72,7 @@ main {
     grid-area: team;
     display: flex;
     gap: .5em;
+    align-items: center;
 }
 
 .team a {
@@ -96,4 +98,44 @@ main {
 .playoffs {
     grid-area: playoff;
     text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    #heading {
+        font-size: 130%;
+    }
+
+    .statlist {
+        width: 95%;
+    }
+
+    .statrow {
+        font-size: 100%;
+        grid-template-columns: 5% 50% 25% 20%;
+        border-radius: 5px;
+        padding: 1px 3px;
+        gap: 3px;
+    }
+
+    .teamlogo {
+        max-width: 25px;
+    }
+
+    .stathead {
+        width: 100%;
+        font-size: 70%;
+    }
+
+    #teamhead {
+        margin-left: 2.5em;
+    }
+
+    #reghead {
+        margin-left: 13.5em;
+    }
+
+    #playoffhead {
+        margin-left: 1em;
+    }
+
 }

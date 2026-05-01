@@ -122,3 +122,39 @@ hr {
     aspect-ratio: 1;
     object-fit: contain;
 }
+
+@media only screen and (max-width: 767px) {
+    main {
+        display: block;
+    }
+
+    h1 {
+        font-size: 130%;
+    }
+
+    #western, #eastern, #final {
+        flex-direction: column;
+    }
+
+    .round1 .roundbox, .round2 .roundbox {
+        flex-direction: row;
+    }
+
+    .round1 .roundbox {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "box1 box2"
+        "box 3 box 4";
+        gap: 2.5em;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .round2 .roundbox {
+        gap: 1.5em;
+    }
+
+    #western, #eastern {
+        gap: 2em;
+    }
+}

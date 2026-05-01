@@ -54,3 +54,40 @@ article {
 .statnum {
     font-size: 300%;
 }
+
+@media only screen and (max-width: 767px) {
+    #pageheader {
+        font-size: 130%;
+    }
+
+    .sectionlabel {
+        color: white;
+        margin: 1em 1em .5em;
+        border-bottom: 5px ridge white;
+        font-size: 110%;
+    }
+
+    section {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    .playerimg img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    article {
+        border: 5px ridge gray;
+        width: 45%;
+    }
+
+    .statnum {
+        font-size: 170%;
+    }
+
+    .playername {
+        font-size: 100%;
+    }
+}

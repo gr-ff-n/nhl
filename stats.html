@@ -5,6 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- JQUERY CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<!-- SLICKNAV JS FILE -->
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobilemenu" });
+		});
+	</script>
+
+	<link rel="stylesheet" href="styles/slicknav.css">
+
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/stats.css">
     <link rel="shortcut icon" href="images/cup logo.png" type="image/x-icon">
@@ -20,7 +34,8 @@
     <header>
         <a href="index.html"><img src="images/header image.png" alt=""></a>
     </header>
-    <nav id="nav_bar">
+    <nav id="mobilemenu"></nav>
+    <nav id="nav_menu">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="bracket.html">Bracket</a></li>
@@ -36,46 +51,46 @@
             <article class="points">
                 <h3 class="header">#1 in Points</h3>
                 <div class="playerimg">
-                    <img src="images/taylorhall.png" alt="">
+                    <img src="images/leondraisaitl.png" alt="">
                 </div>
-                <h2 class="playername">Taylor Hall</h2>
+                <h2 class="playername">Leon Draisaitl</h2>
                 <div class="subhead">
-                    <img src="images/hurricanes logo.png" alt="" class="teamlogo">
-                    <p class="playerinfo">CAR &bullet; #71 &bullet; L</p>
+                    <img src="images/oilers logo.png" alt="" class="teamlogo">
+                    <p class="playerinfo">EDM &bullet; #29 &bullet; C</p>
                 </div>
                 <div class="stat">
                     <p class="statlabel">POINTS:</p>
-                    <h1 class="statnum">7</h1>
+                    <h1 class="statnum">10</h1>
                 </div>
             </article>
             <article class="goals">
                 <h3 class="header">#1 in Goals</h3>
                 <div class="playerimg">
-                    <img src="images/jasonrobertson.png" alt="">
+                    <img src="images/mattboldy.png" alt="">
                 </div>
-                <h2 class="playername">Jason Robertson</h2>
+                <h2 class="playername">Matt Boldy</h2>
                 <div class="subhead">
-                    <img src="images/stars logo.png" alt="" class="teamlogo">
-                    <p class="playerinfo">DAL &bullet; #21 &bullet; L</p>
+                    <img src="images/wild logo.svg" alt="" class="teamlogo">
+                    <p class="playerinfo">MIN &bullet; #12 &bullet; L</p>
                 </div>
                 <div class="stat">
                     <p class="statlabel">GOALS:</p>
-                    <h1 class="statnum">4</h1>
+                    <h1 class="statnum">6</h1>
                 </div>
             </article>
             <article class="assists">
                 <h3 class="header">#1 in Assists</h3>
                 <div class="playerimg">
-                    <img src="images/taylorhall.png" alt="">
+                    <img src="images/jacksonlacombe.png" alt="">
                 </div>
-                <h2 class="playername">Taylor Hall</h2>
+                <h2 class="playername">Jackson Lacombe</h2>
                 <div class="subhead">
-                    <img src="images/hurricanes logo.png" alt="" class="teamlogo">
-                    <p class="playerinfo">CAR &bullet; #71 &bullet; L</p>
+                    <img src="images/ducks logo.png" alt="" class="teamlogo">
+                    <p class="playerinfo">ANA &bullet; #2 &bullet; D</p>
                 </div>
                 <div class="stat">
                     <p class="statlabel">ASSISTS:</p>
-                    <h1 class="statnum">5</h1>
+                    <h1 class="statnum">8</h1>
                 </div>
             </article>
         </section>
@@ -83,36 +98,6 @@
         <section id="goalies">
             <article class="gaa">
                 <h3 class="header">#1 in GAA</h3>
-                <div class="playerimg">
-                    <img src="images/alexlyon.png" alt="">
-                </div>
-                <h2 class="playername">Alex Lyon</h2>
-                <div class="subhead">
-                    <img src="images/sabres logo.png" alt="" class="teamlogo">
-                    <p class="playerinfo">BUF &bullet; #34 &bullet; G</p>
-                </div>
-                <div class="stat">
-                    <p class="statlabel">GAA:</p>
-                    <h1 class="statnum">0.81</h1>
-                </div>
-            </article>
-            <article class="sv">
-                <h3 class="header">#1 in SV %</h3>
-                <div class="playerimg">
-                    <img src="images/alexlyon.png" alt="">
-                </div>
-                <h2 class="playername">Alex Lyon</h2>
-                <div class="subhead">
-                    <img src="images/sabres logo.png" alt="" class="teamlogo">
-                    <p class="playerinfo">BUF &bullet; #34 &bullet; G</p>
-                </div>
-                <div class="stat">
-                    <p class="statlabel">SV %:</p>
-                    <h1 class="statnum">.969</h1>
-                </div>
-            </article>
-            <article class="shutouts">
-                <h3 class="header">#1 in Shutouts</h3>
                 <div class="playerimg">
                     <img src="images/frederikandersen.png" alt="">
                 </div>
@@ -122,8 +107,38 @@
                     <p class="playerinfo">CAR &bullet; #31 &bullet; G</p>
                 </div>
                 <div class="stat">
+                    <p class="statlabel">GAA:</p>
+                    <h1 class="statnum">1.10</h1>
+                </div>
+            </article>
+            <article class="sv">
+                <h3 class="header">#1 in SV %</h3>
+                <div class="playerimg">
+                    <img src="images/frederikandersen.png" alt="">
+                </div>
+                <h2 class="playername">Frederik Andersen</h2>
+                <div class="subhead">
+                    <img src="images/hurricanes logo.png" alt="" class="teamlogo">
+                    <p class="playerinfo">CAR &bullet; #31 &bullet; G</p>
+                </div>
+                <div class="stat">
+                    <p class="statlabel">SV %:</p>
+                    <h1 class="statnum">.955</h1>
+                </div>
+            </article>
+            <article class="shutouts">
+                <h3 class="header">#1 in Shutouts</h3>
+                <div class="playerimg">
+                    <img src="images/danvladar.png" alt="">
+                </div>
+                <h2 class="playername">Dan Vladar</h2>
+                <div class="subhead">
+                    <img src="images/flyers logo.svg" alt="" class="teamlogo">
+                    <p class="playerinfo">PHI &bullet; #80 &bullet; G</p>
+                </div>
+                <div class="stat">
                     <p class="statlabel">SHUTOUTS:</p>
-                    <h1 class="statnum">1</h1>
+                    <h1 class="statnum">2</h1>
                 </div>
             </article>
         </section>
@@ -141,7 +156,7 @@
                 </div>
                 <div class="stat">
                     <p class="statlabel">POINTS:</p>
-                    <h1 class="statnum">6</h1>
+                    <h1 class="statnum">9</h1>
                 </div>
             </article>
             <article class="goals">
@@ -171,7 +186,7 @@
                 </div>
                 <div class="stat">
                     <p class="statlabel">ASSISTS:</p>
-                    <h1 class="statnum">5</h1>
+                    <h1 class="statnum">8</h1>
                 </div>
             </article>
         </section>
@@ -208,7 +223,7 @@
                 </div>
             </article>
             <article class="assists">
-                <h3 class="header">#1 in Assists:</h3>
+                <h3 class="header">#1 in Assists</h3>
                 <div class="playerimg">
                     <img src="images/carteryakemchuk.png" alt="">
                 </div>
